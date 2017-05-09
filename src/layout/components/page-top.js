@@ -29,7 +29,7 @@ export class PageTop extends React.Component {
     this.renderLogo = this.renderLogo.bind(this);
     this.state = {
       dropdownOpen: true,
-      title : this.props.pagetitle,
+      title : 'Home',
       notifications: [{
         user: {
           name: 'Ashley',
@@ -115,6 +115,10 @@ export class PageTop extends React.Component {
 
   }
 
+  componentWillReceiveProps(nextProps) {
+    if(this.props.pagetitle != nextProps.pagetitle) this.setState({title: nextProps.pagetitle})
+  }
+
   toggle(e) {
     e.preventDefault();
     this.setState({
@@ -150,7 +154,7 @@ export class PageTop extends React.Component {
   renderLogo() {
     
     return (
-      <Link to={{ pathname: '/' }} className="al-logo clearfix">{this.state.appName}
+      <Link to={{ pathname: '/' }} className="al-logo clearfix" onClick = {() => this.setState({title: 'Home'})}>{this.state.appName}
         <div className="logo" />         
                         
         <h4>&nbsp;TERRA &nbsp;<span style = {{opacity:'0.7', fontSize:'12px', fontWeight: '100'}}>|&nbsp; investimentos</span></h4>  
@@ -167,7 +171,7 @@ export class PageTop extends React.Component {
   renderTitle() {
     let _this = this;
     return (  
-        <h4>{_this.props.pagetitle}</h4>
+        <h4>{_this.state.title}</h4>
     )      
   }
   

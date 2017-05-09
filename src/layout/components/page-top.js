@@ -137,10 +137,7 @@ export class PageTop extends React.Component {
   // }
 
   componentDidMount() {    
-    // $("#menu-toggle").click(function(e) {
-    //     e.preventDefault();
-    //     $("#wrapper").toggleClass("toggled");
-    // });
+    
   }
 
   onToggleMenu() {
@@ -157,7 +154,7 @@ export class PageTop extends React.Component {
       <Link to={{ pathname: '/' }} className="al-logo clearfix" onClick = {() => this.setState({title: 'Home'})}>{this.state.appName}
         <div className="logo" />         
                         
-        <h4>&nbsp;king &nbsp;<span style = {{opacity:'0.7', fontSize:'12px', fontWeight: '100'}}>|&nbsp; investimentos</span></h4>  
+        <h4>&nbsp;TERRA &nbsp;<span style = {{opacity:'0.7', fontSize:'12px', fontWeight: '100'}}>|&nbsp; investimentos</span></h4>  
       </Link>      
     );
   }

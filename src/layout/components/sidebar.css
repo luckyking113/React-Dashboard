@@ -1,0 +1,50 @@
+.al-sidebar-list-link {
+    color: #8dacb8 !important;
+
+}
+
+.al-sidebar-list-link:hover {
+    color: #c0f4f1 !important;
+}
+
+.show-grid{
+    text-align: left;
+    margin-top: 48px;    
+}
+
+.show-grid .row{
+    padding: 0px 20px;
+}
+.show-grid hr{
+    width:94%;
+    margin-top: 9px;
+    margin-bottom: 10px;
+    border-top: 1px solid #617a88;
+    opacity: 0.3;    
+}
+
+.show-grid hr{
+    width:94%;
+    margin-top:11px;
+    border-top: 1px solid #617a88;
+    opacity: 0.3;    
+}
+
+.sidebar-text-color {
+    color:#a5e0db !important;
+}
+.sidebar-percent-text1 {
+    color:#5df8ab !important;
+}
+.sidebar-percent-text2 {
+    color: #dc5e65 !important;
+}
+.sidebar-text-color1 {
+    color: #617a88 !important;
+}
+.fontcontrol {
+    text-align: right !important;    
+}
+
+
+

@@ -137,10 +137,7 @@ export class PageTop extends React.Component {
   // }
 
   componentDidMount() {    
-    // $("#menu-toggle").click(function(e) {
-    //     e.preventDefault();
-    //     $("#wrapper").toggleClass("toggled");
-    // });
+    
   }
 
   onToggleMenu() {

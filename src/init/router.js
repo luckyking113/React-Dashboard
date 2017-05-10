@@ -27,8 +27,8 @@ export const AppRouter = (
     <Route path='/login' component={Login} />
     <Route component={AppLayout}>
       <Route path='/' component={Welcome} />
-      {/*<Route path='/about' component={About} />
-      <Route path='/progress-bars' component={ProgressBars} />
+      <Route path='/about' component={About} />
+      {/*<Route path='/progress-bars' component={ProgressBars} />
       <Route path='/button-demo' component={ButtonDemo} />
       <Route path='/modal-demo' component={ModalDemo} />
       <Route path='/table-demo' component={TableDemo} />

@@ -124,7 +124,9 @@
 .childWelcome {
     height: 40px !important;
     width: 40px;
-    margin-left: 160px;
+    position:relative;
+    left: -20px;
+    margin-left: 50%;    
     margin-top: 40px !important;
 }
 
@@ -194,10 +196,10 @@
 }
 
 .circle-position {
-    position: absolute;
-    margin-left:-33%;
-    left: 50%;
-    margin-top:23%
+    position: relative;
+    left: -160px;
+    margin-left:50%;
+    margin-top:125px;    
 }
 
 
@@ -208,8 +210,8 @@
 }
 
 .lineControl .hr1 {
-    width: 42%;
-    margin: -17px 0px 35px !important;
+    width: 41%;
+    margin: -17px 15px 35px !important;
     border-color:#7d8da3 !important;
 }
 
@@ -221,6 +223,18 @@
     border-color:#7d8da3 !important;
 }
 
+
+/*.equal-height {
+    display: flex !important;
+}
+
+.equal-height .equal-height-child {
+    flex: 1 !important;
+}
+
+.equal-height .equal-height-child .childHeight {
+    height: 100% !important;
+}*/
 
 
 /*mobile responsive - statistical date of welcomecontent*/
@@ -265,7 +279,6 @@
         width:22% !important;
     }
 }
-
 
 @media (max-width: 1406px) {
     .welcome-chart1 .fa-1x {       
@@ -455,6 +468,9 @@
     .ChildWelcome2 {
         width:97% !important;
     }
+    .childWelcome {
+        padding-top: 40px !important;
+    }
 }
 
 
@@ -463,6 +479,11 @@
         width:100% !important;
         /*margin-right: 30px;*/
     }
+    .circle-position {
+        margin-top:30px;
+        margin-bottom: 60px;    
+    }
+
     /*.welcome-chart1 .col-md-9, .col-sm-9 {
         width:100% !important;
         margin-right: 30px;

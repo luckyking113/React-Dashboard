@@ -27,7 +27,7 @@ export const AppRouter = (
     <Route path='/login' component={Login} />
     <Route component={AppLayout}>
       <Route path='/' component={Welcome} />
-      <Route path='/about' component={About} />
+      {/*<Route path='/about' component={About} />
       <Route path='/progress-bars' component={ProgressBars} />
       <Route path='/button-demo' component={ButtonDemo} />
       <Route path='/modal-demo' component={ModalDemo} />
@@ -35,7 +35,7 @@ export const AppRouter = (
       <Route path='/tabs-demo' component={TabsDemo} />
       <Route path='/input-demo' component={InputDemo} />
       <Route path='/notifications-demo' component={NotificationsDemo} />
-      <Route path="*" component={NotFound}/>
+      <Route path="*" component={NotFound}/>*/}
     </Route>
   </Router>
 );

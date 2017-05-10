@@ -195,7 +195,7 @@ export class PageTop extends React.Component {
       <div className="user-profile clearfix">
         <div className={`al-user-profile dropdown ${this.state.isMenuOpen ? 'open' : ''}`}>
           <a className="profile-toggle-link dropdown-toggle" onClick={this.onToggleMenu.bind(this)}>
-            <img src={this.props.user && this.props.user.picture ? this.props.user.picture : Person}>Ronaldo Alves</img>
+            <img src={this.props.user && this.props.user.picture ? this.props.user.picture : Person}><span  style ={{color:'#fff !important'}}>Ronaldo Alves</span></img>
           </a>
           <ul className="top-dropdown-menu profile-dropdown dropdown-menu">
             <li><i className="dropdown-arr"></i></li>
@@ -210,9 +210,9 @@ export class PageTop extends React.Component {
         </div>
         <Row>
           <Col padding='5px 2px'>
-            <MessagesAlertContainer mailCount={this.state.messages.length} markAllAsReadOnClick={noop} allMessagesOnClick={noop} settingsOnClick={noop} >
+            {/*<MessagesAlertContainer mailCount={this.state.messages.length} markAllAsReadOnClick={noop} allMessagesOnClick={noop} settingsOnClick={noop} >
               {this.renderMessages()}
-            </MessagesAlertContainer>
+            </MessagesAlertContainer>*/}
             <NotificationsAlert
               notificationCount={this.state.notifications.length}
               markAllAsReadOnClick={noop}
@@ -222,7 +222,9 @@ export class PageTop extends React.Component {
             </NotificationsAlert>
           </Col>
         </Row>
+        <div className = "hamburgerMenu">{this.renderHamburgerMenu()}</div>
       </div>
+      
     );
   }
 
@@ -232,16 +234,21 @@ export class PageTop extends React.Component {
         <div className="logoImg">
           {this.renderLogo()}        
         </div>
-        <div className = "headerTitle">  
-          {this.renderTitle()}
-        </div>
-        <div className="userHeader">
-          <div className="userSection">  
-            <div style = {{float:'left'}}>{this.renderUserSection()}</div>         
+        <div>
+          {/*<div className = "col-lg-2 col-md-2 headerTitle">  
+            {this.renderTitle()}
+          </div>*/}
+          <div className="userHeader">
+            <div className = "headerTitle">  
+              {this.renderTitle()}
+            </div>
+            <div className="userSection">  
+              <div>{this.renderUserSection()}</div>         
+            </div>
+            {/*<div className = "hamburgerMenu">{this.renderHamburgerMenu()}</div>*/}
           </div>
-            <div className = "hamburgerMenu">{this.renderHamburgerMenu()}</div>
-          </div>
         </div>
+      </div>
     );
   }
 }

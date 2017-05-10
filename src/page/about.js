@@ -8,20 +8,20 @@ export class About extends React.Component {
   renderBreadcrumbs() {
     return (
       <Breadcrumbs>
-        <Link to='/'>
+        {/*<Link to='/'>
           Home
         </Link>
-          About
+          About*/}
       </Breadcrumbs>
     );
   }
 
   render() {
     return (
-      <Page actionBar={this.renderBreadcrumbs()} title='About'>
-        <Panel title='The Team'>
+      <Page actionBar={this.renderBreadcrumbs()} title=''>
+        {/*<Panel title='The Team'>
           Lorem Ipsum
-        </Panel>
+        </Panel>*/}
       </Page>
     );
   }

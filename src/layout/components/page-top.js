@@ -196,6 +196,7 @@ export class PageTop extends React.Component {
         <div className={`al-user-profile dropdown ${this.state.isMenuOpen ? 'open' : ''}`}>
           <a className="profile-toggle-link dropdown-toggle" onClick={this.onToggleMenu.bind(this)}>
             <img src={this.props.user && this.props.user.picture ? this.props.user.picture : Person}><span  style ={{color:'#fff !important'}}>Ronaldo Alves</span></img>
+             {/*<div className="logImage"><span  style ={{color:'#fff !important'}}>Ronaldo Alves</span></div>*/}
           </a>
           <ul className="top-dropdown-menu profile-dropdown dropdown-menu">
             <li><i className="dropdown-arr"></i></li>
